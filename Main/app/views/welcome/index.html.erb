@@ -1,2 +1,28 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+
+<section ng-controller="ScoresController">
+
+  <h3> {{ heading }} </h3>
+
+  <form ng-submit="sendSearch()">
+    <input type="text" ng-model="searchTerm">
+    <input type="submit">
+  </form>
+
+  <ul>
+
+    <img ng-show="loading" src="https://media.giphy.com/media/CD1tWaGFs5teM/giphy.gif" alt="" />
+
+    <li ng-repeat="violation in violations">
+      <h3>{{ score.name }}</h3>
+      <p>
+        {{ score.admin }}
+      </p>
+    </li>
+
+    <li>
+      <button ng-click="loadMore()">Load More</button>
+    </li>
+
+  </ul>
+
+</section>
