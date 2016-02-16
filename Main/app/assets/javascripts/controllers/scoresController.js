@@ -18,7 +18,7 @@ ctrl.controller('ScoresController', ['$scope', 'ScoresApi',
 
     $scope.sendSearch = function(){
       $scope.loading = true;
-      ScoresApi.search( $scope.searchTerm ).then(function(response){
+      ScoresApi.search( $scope.search_term ).then(function(response){
         $scope.scores = response.data.scores;
         $scope.loading = false;
       });

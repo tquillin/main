@@ -15,4 +15,3 @@
 //= require services/scoresApiService
 //= require controllers/scoresController
 //= require app
-console.log(process.env.NAME);
