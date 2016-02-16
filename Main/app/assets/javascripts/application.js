@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require services/scoresApiService
-//= require controllers/scoresController 
+//= require controllers/scoresController
 //= require app
+console.log(process.env.NAME);
