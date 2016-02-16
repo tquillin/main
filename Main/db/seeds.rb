@@ -2,7 +2,7 @@ require 'csv'
 
 puts 'Parsing File'
 
-data = CSV.foreach('./db/School_Progress_Report_2010_2011.csv', headers: true).map do |row|
+data = CSV.foreach('./School_Progress_Report_2010-2011.csv', headers: true).map do |row|
   {
     name: row['SCHOOL'],
     admin: row['PRINCIPAL'],

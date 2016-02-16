@@ -1,7 +1,7 @@
 
 <section ng-controller="ScoresController">
 
-  <h3> {{ heading }} </h3>
+  <h3> {{ search }} </h3>
 
   <form ng-submit="sendSearch()">
     <input type="text" ng-model="searchTerm">
@@ -15,7 +15,9 @@
     <li ng-repeat="score in scores">
       <h3>{{ score.name }}</h3>
       <p>
-        {{ score.admin }}
+        Principal:{{ score.admin }}<br />
+        Grade Level:{{ score.level }}<br />
+        Overall Score:{{ score.grade }}
       </p>
     </li>
 

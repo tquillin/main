@@ -23,7 +23,7 @@ def index
 
   if params[:search]
     search_term = params[:search]
-    scores = Score.where("description ILIKE ?", "%#{search_term}%")
+    scores = Score.where("name ILIKE ?", "%#{search_term}%")
                           .limit(limit)
   else
     page = (params[:page] || 0).to_i

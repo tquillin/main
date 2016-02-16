@@ -3,7 +3,7 @@ var ctrl = angular.module("MainControllerModule",[]);
 ctrl.controller('ScoresController', ['$scope', 'ScoresApi',
   function($scope, ScoresApi){
 
-    $scope.heading = "That smells...";
+    $scope.heading = "What's the score?";
 
     $scope.scores = [];
     $scope.page = 0;
@@ -26,3 +26,20 @@ ctrl.controller('ScoresController', ['$scope', 'ScoresApi',
 
   }
 ]);
+// def index
+//
+//   limit = (params[:limit] || 10).to_i
+//
+//   if params[:search]
+//     search_term = params[:search]
+//     scores = Score.where("description ILIKE ?", "%#{search_term}%")
+//                           .limit(limit)
+//   else
+//     page = (params[:page] || 0).to_i
+//     scores = Score.offset(limit*page).limit(limit)
+//   end
+//
+//   render json: {scores: scores}
+// end
+//
+// end
