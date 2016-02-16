@@ -15,7 +15,7 @@ api.factory('ScoresApi', ['$http', function($http){
   scoresFactoryInterface.search = function(search_term){
     var url = baseUrl + "?search=" + search_term + "&limit=1000";
     return $http.get(url);
-  }
+  };
 
   return scoresFactoryInterface;
 
