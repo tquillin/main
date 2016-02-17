@@ -3,7 +3,7 @@ var api = angular.module('ScoresApiFactory', []);
 api.factory('ScoresApi', ['$http', function($http){
 
   var scoresFactoryInterface = {};
-  var baseUrl = '/api/scores';
+  var baseUrl = '/api/scores/';
 
   scoresFactoryInterface.getAll = function(page, limit){
     page = page || 0;

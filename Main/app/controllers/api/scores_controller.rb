@@ -33,4 +33,9 @@ def index
   render json: {scores: scores}
 end
 
+# private
+# def scores_params
+#   params.require(:scores_params).permit(:name, :admin, :level, :grade)
+# end
+
 end

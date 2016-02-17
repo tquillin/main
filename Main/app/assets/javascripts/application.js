@@ -15,3 +15,4 @@
 //= require services/scoresApiService
 //= require controllers/scoresController
 //= require app
+// require('dotenv').load();

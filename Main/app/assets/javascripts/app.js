@@ -3,5 +3,4 @@
 
 var app = angular.module('ScoresApp', ['MainControllerModule', 'ScoresApiFactory']);
 
-var dotenv = require('dotenv');
-dotenv.load();
+// require('dotenv').load();
